@@ -12,8 +12,8 @@ VMESS_WSPATH=${VMESS_WSPATH:-'/abc1'}
 VLESS_WSPATH=${VLESS_WSPATH:-'/abc2'}
 URL=${USER}.alwaysdata.net
 
-wget -q -O $TMP_DIRECTORY/config.json https://raw.githubusercontent.com/freefly22/web-for-AlwaysData/main/config.json
-wget -q -O $TMP_DIRECTORY/web.zip https://raw.githubusercontent.com/freefly22/web-for-AlwaysData/main/web.zip
+wget -q -O $TMP_DIRECTORY/config.json https://raw.githubusercontent.com/yizhipian/web-for-alwaysdata/main/config.json
+wget -q -O $TMP_DIRECTORY/web.zip https://raw.githubusercontent.com/yizhipian/web-for-alwaysdata/main/web.zip
 unzip -oq -d $HOME $TMP_DIRECTORY/web.zip web v2ctl geoip.dat geosite.dat geoip-only-cn-private.dat
 
 sed -i "s#UUID#$UUID#g;s#VMESS_WSPATH#$VMESS_WSPATH#g;s#VLESS_WSPATH#$VLESS_WSPATH#g;s#10000#8300#g;s#20000#8400#g;s#127.0.0.1#0.0.0.0#g" $TMP_DIRECTORY/config.json
