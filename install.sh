@@ -7,7 +7,7 @@ UUID=$(grep -o 'UUID=[^ ]*' $HOME/admin/config/apache/sites.conf | sed 's/UUID=/
 VMESS_WSPATH=$(grep -o 'VMESS_WSPATH=[^ ]*' $HOME/admin/config/apache/sites.conf | sed 's/VMESS_WSPATH=//')
 VLESS_WSPATH=$(grep -o 'VLESS_WSPATH=[^ ]*' $HOME/admin/config/apache/sites.conf | sed 's/VLESS_WSPATH=//')
 
-UUID=${UUID:-'66fee850-56d8-45d7-a9e5-bb79d27bed55'}
+UUID=${UUID:-'a11a8af7-8624-4c01-95ff-9c4554fa29e1'}
 VMESS_WSPATH=${VMESS_WSPATH:-'/abc1'}
 VLESS_WSPATH=${VLESS_WSPATH:-'/abc2'}
 URL=${USER}.alwaysdata.net
